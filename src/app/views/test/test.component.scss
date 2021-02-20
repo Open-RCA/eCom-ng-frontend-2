@@ -15,12 +15,15 @@
     button{
         padding: 15px;
         border-radius: 25px 25px;
-        color: #fff;
         background-color: $base-color;
         border-width: 0px;
         width: 200px;
         font-size: 14px;
         cursor: pointer;
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
     }
     button:hover{
         transform: scale(1.02);
