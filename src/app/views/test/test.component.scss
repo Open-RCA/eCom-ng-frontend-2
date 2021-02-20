@@ -1,0 +1,28 @@
+@import "src/variables.scss";
+
+.container-fluid{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.container{
+    width: 30%;
+    margin: 15% 0% 0% 10%;
+    p{
+        margin-left: 0.5em;
+    }
+    button{
+        padding: 15px;
+        border-radius: 25px 25px;
+        color: #fff;
+        background-color: $base-color;
+        border-width: 0px;
+        width: 200px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    button:hover{
+        transform: scale(1.02);
+    }
+}
