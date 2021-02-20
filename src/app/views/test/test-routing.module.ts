@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {TestComponent} from './test.component';
-const routes: Routes = [
-  {
+import { TestComponent } from './test.component';
+
+const routes: Routes = [{
   path: '',
-  pathMatch: 'full',
+  pathMatch:'full',
   component: TestComponent
-  }
-];
+}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
