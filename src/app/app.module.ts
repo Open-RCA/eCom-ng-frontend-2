@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestDirective } from './directives/test.directive';
 import { TestPipe } from './pipes/test.pipe';
+import {ComponentsModule} from './components/components.module';
+import {ViewsModule} from './views/views.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestDirective,
-    TestPipe
+    TestPipe,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentsModule,
+    ViewsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
