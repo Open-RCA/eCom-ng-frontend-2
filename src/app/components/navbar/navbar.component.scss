@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import "./../../../variables.scss";
+div.navbar[text]{
+    font-family: 'DM Sans', sans-serif !important;
+}
+div.navbar{
+    width: absolute;
+    top: 0;
+    background: $white;
+    box-sizing: border-box;
+    height: 60px;
+}
+input.search{
+    padding: 4px;
+    position: absolute;
+    left: 3.69%;
+    top: 2.27%;
+    background: $form-fields;
+    border-radius: 27px;
+}
+button{
+    border: none;
+}
+button.i.fa.fa-search {
+    position: absolute;
+    left: 14.4%;
+    top: 3.17%;
+   color: $text-grey;
+}
+a.i.fa.fa-bell{
+    position: absolute;
+    left: 79%;
+    top: 3.17%;
+    background-color: $white;
+    color: $black-text;
+    text-decoration: none;
+}
+a.i.fa.fa-briefcase{
+    position: absolute;
+    left: 75%;
+    top: 3.17%;
+    background-color: $white;
+    color: $black-text;
+    text-decoration: none;
+}
+img.profile{
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    border-radius: 30px;
+    left: 83%;
+    top: 2.5%;
+}
+a.name{
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    left: 85.8%;
+    top: 2.4%;
+    text-decoration: none;
+    color: $black-text;
+}
+span.userType{
+    font-size: 10px;
+    position: absolute;
+    left: 85.8%;
+    top: 5%;
+    color: $text-grey;
+}
+div.logo{
+    background-color: $base-color;
+    position: absolute;
+    width: 52px;
+    height: 51px;
+    left: 80px;
+    top: 16px;
+    border-radius: 4px;
+}
+img.shoppinglogo{
+    padding: 7px;
+    width: 30px;
+    color: $white;
+    background-color: $base-color;
+}
+a.logo{
+    color: $base-color;
+    text-decoration: none;
+    position: absolute;
+    width: 115px;
+    height: 23px;
+    left: 140px;
+    top: 30px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+input.search-bar{
+    position: absolute;
+    left: 340px;
+    top: 33px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: $text-grey;
+    width: 359px;
+}
+img.searchicons{
+    position: absolute;
+    left: 685px;
+    top: 34px;
+    width: 20px;
+    height: 15px;
+}
+a.profIcon{
+    position: absolute;
+    left: 900px;
+    top: 28px;
+}
+a.heart{
+    position: absolute;
+    left: 960px;
+    top: 28px; 
+}
+a.cart{
+    position: absolute;
+    left: 1015px;
+    top: 28px; 
+}
+ul.categories{
+    background-color: $base-color;
+    position: absolute;
+    width: 190px;
+    height: 40px;
+    left: 82px;
+    top: 70px;
+}
+ul.categories li{
+    list-style-type: none;
+    color: $white;
+    padding-top: 7px;
+}
+a.homeLink{
+    position: absolute;
+width: 45px;
+height: 21px;
+left: 558px;
+top: 100px;
+text-decoration: none;
+color: $black-text;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+}
+a.shoplink{
+    position: absolute;
+width: 39px;
+height: 21px;
+left: 664px;
+top: 100px;
+text-decoration: none;
+color: $black-text;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+}
+a.contactlink{
+    position: absolute;
+width: 62px;
+height: 21px;
+left: 764px;
+top: 100px;
+text-decoration: none;
+color: $black-text;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+}

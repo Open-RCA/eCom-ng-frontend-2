@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestDirective } from './directives/test.directive';
 import { TestPipe } from './pipes/test.pipe';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestDirective,
-    TestPipe
+    TestPipe,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
