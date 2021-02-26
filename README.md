@@ -67,6 +67,9 @@ $ ng g d directives/<directive-name>
  - Images will be located in ``src/assets/images`` folder
  - Icons will be located in ``src/assets/icons`` folder
  
+**##use of navigation bar and sidebar**
+
+- In order to use the navigation bar and sidebar for the admin you need to change the user type in navbar component
 
 <h1></h1>
 <p>Happy coding</p>
