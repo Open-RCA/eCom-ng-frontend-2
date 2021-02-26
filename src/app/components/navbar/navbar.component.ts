@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  adminInbox = "./../../../assets/icons/adminInbox.svg";
+  notificationIcon = "./../../../assets/icons/notifications.svg";
   image = "./../../../assets/images/JiYeon.jpg";
   name = "James Bradley";
-  userType = "user";
+  //userType = "user";
   icon = "./../../../assets/images/dash_icon.png";
   dashboardLink = "#";
   notifications = "#";
@@ -26,10 +29,22 @@ export class NavbarComponent implements OnInit {
   contactlink = "#";
   shoplink = "#";
   shoppinglogo = "./../../../assets/icons/shopping-cart.svg"
-
+  fourCatdots = "./../../../assets/icons/category-front-icon.svg";
+  // City Names
+  Categories: any = ['Technology', 'Clothes', 'Accesories', 'Shoes']
+  static userType: any ="Admin";
   //isAdmin:boolean = false;
-  
-  constructor() { }
+  get getUserType(){
+    return NavbarComponent.userType;
+  } 
+  currentPage: string | undefined;
+  constructor(private router: Router) {
+    this.router.events.subscribe((val) => {
+      if(val instanceof NavigationEnd) {
+        this.currentPage = val.url;
+      }
+    });
+  }
 
   ngOnInit(): void {
   }

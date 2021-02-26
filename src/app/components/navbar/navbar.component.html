@@ -1,34 +1,40 @@
-<div class="navbar" *ngIf ="userType=='Admin'">
-    <input class="search" type="text" placeholder="Search">
-    <button type="submit" class="i fa fa-search"></button>
-    <a [href]="reports" class="i fa fa-briefcase"></a>
-    <a [href]="notifications" class="i fa fa-bell"></a>
+<div class="navbar" *ngIf ="getUserType=='Admin'">
+    <input class="search" type="text" placeholder="  Search">
+    <button type="submit" class="adminSearch" ><img [attr.src]="searchIcon" alt=""></button>
+    <a class="adminInbox" routerLink="/inbox" [ngClass]="{'activeSpan': currentPage === '/'}"><img [attr.src]="adminInbox" alt=""></a>
+    <a class="notification" routerLink="/notifications" [ngClass]="{'activeSpan': currentPage === '/notifications'}"><img [attr.src]="notificationIcon" alt=""></a>
     <img class="profile" [attr.src]="image" alt="Profile">
-    <a [href]="profile_setting" class="name" >{{name}}</a>
-    <span class="userType">{{userType}}</span>
+    <a class="name" routerLink="/profile_settings" [ngClass]="{'activeSpan': currentPage === '/settings'}">{{name}}</a>
+    <span class="userType">{{getUserType}}</span>
 </div>
-<div class="navbar" *ngIf ="userType=='user'">
+<div class="navbar" *ngIf ="getUserType=='user'">
     <div class="logo"> 
         <img [src]="shoppinglogo" class="shoppinglogo" alt="">
     </div>
-    <a [href]="homelink" class="logo">E-commerce</a>
+    <a class="logo" routerLink="/home" [ngClass]="{'activeSpan': currentPage === '/'}">E-commerce</a>
     <input type="text" class="search-bar" placeholder="  Search products">
-    <button type="submit">
+    <button type="submit" class="useSearch">
     <img [src]="searchIcon" alt="" class="searchicons">
     </button>
-    <a [href]="login" class="profIcon">
+    <a class="profIcon" routerLink="/profile_settings" [ngClass]="{'activeSpan': currentPage === '/settings'}">
         <img [src]="profileIcon" alt="" class="profileIcon">
     </a>
-    <a [href]="heartlink" class="heart">
+    <a class="heart" routerLink="/heart" [ngClass]="{'activeSpan': currentPage === '/heart'}" >
         <img [src]="heartIcon" alt="">
     </a>
-    <a [href]="cart" class="cart">
+    <a class="cart" routerLink="/cart" [ngClass]="{'activeSpan': currentPage === '/cart'}">
         <img [src]="shoppingBag" alt="">
     </a>
-    <ul class="categories">
-        <li>Browse by categories</li>
-    </ul>
-    <a [href]="homeLink" class="homeLink">Home</a>
-    <a [href]="shoplink" class="shoplink">Shop</a>
-    <a [href]="contactlink" class="contactlink">Contact</a>
+    <img [src]="fourCatdots" class="fourCatdots" alt="">
+    <div class="categories">
+        <img [src]="fourCatdots" alt="">
+    <select class="categoryselect">
+        
+        <option value="" >Browse by categories</option>
+        <option *ngFor="let category of Categories" >{{category}}</option>
+     </select>
+    </div>
+    <a class="homeLink" routerLink="/home" [ngClass]="{'activeSpan': currentPage === '/'}">Home</a>
+    <a class="shoplink" routerLink="/products" [ngClass]="{'activeSpan': currentPage === '/products'}">Shop</a>
+    <a class="contactlink" routerLink="/contact" [ngClass]="{'activeSpan': currentPage === '/contact'}">Contact</a>
 </div>

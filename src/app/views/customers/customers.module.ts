@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { TestRoutingModule } from './test-routing.module';
-import { TestComponent } from './test.component';
+import { CustomersRoutingModule } from './customers-routing.module';
+import { CustomersComponent } from './customers.component';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 
 @NgModule({
-  declarations: [TestComponent],
+  declarations: [CustomersComponent],
   imports: [
     CommonModule,
-    TestRoutingModule,
+    CustomersRoutingModule,
     ComponentsModule
-  ],
-  exports: []
+  ]
 })
-export class TestModule { }
+export class CustomersModule { }
