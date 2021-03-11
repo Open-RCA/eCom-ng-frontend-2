@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
   fourCatdots = "./../../../assets/icons/category-front-icon.svg";
   Categories: any = ['Technology', 'Clothes', 'Accesories', 'Shoes'];
   //usertype for normal user is 'user' and for admin it's 'Admin'
-  static userType: any ="user";
+  static userType: any ="Admin";
   //isAdmin:boolean = false;
   get getUserType(){
     return NavbarComponent.userType;

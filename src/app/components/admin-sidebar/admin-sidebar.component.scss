@@ -1,0 +1,39 @@
+.nav-links a{
+    display: block;
+    height: 50px;
+    padding-left: 2em;
+    margin-top: -1.5em;
+    text-decoration: none;
+}
+.nav-links img{
+    width: 30px;
+}
+.sidebar>span>a{
+    color: blue;
+    font-size: 18px;
+    top: -40px;
+    text-decoration: none;
+    padding-left: 2em;
+}
+.sidebar{
+    background-color: red;
+    width: 30vh;
+    height: 90vh;
+    margin-top: -60px;
+}
+.nav-links{
+    margin-top: 6em;
+    background-color: green;
+    padding-left: 1em;
+}
+.help{
+    margin-top: 10em;
+    padding-left: 1em;
+}
+.help a{
+    margin-top: -1.8em;
+}
+.help img{
+    margin-top: 2em;
+    width: 30px;
+}
