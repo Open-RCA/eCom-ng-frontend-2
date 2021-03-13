@@ -1,0 +1,26 @@
+<div class="container-fluid" *ngIf ="user=='Admin'">
+        <div class="sidebar">
+          <div class="top-desc">
+            <a href=""> E-commerce</a>
+          </div>
+          <div class="nav-links">
+            <div class="sub-nav-link">
+            <a class="" routerLink="/dashboard" [ngClass]="{'activeSpan': currentPage === '/'} ">
+              <img src="../../../assets/images/dashboard.svg">
+              Dashboard</a>
+            </div>
+            <a routerLink="/orders" [ngClass]="{'activeSpan': currentPage === '/orders'} ">
+              <img src="../../../assets/images/orders.svg">
+              Orders</a>
+            <a routerLink="/products" [ngClass]="{'activeSpan': currentPage === '/products'} ">
+              <img src="../../../assets/images/products.svg">
+              Products</a>
+            <a routerLink="/customers" [ngClass]="{'activeSpan': currentPage === '/customers'} ">
+              <img src="../../../assets/images/customers.svg">
+              Customers</a>
+            <a routerLink="/settings" [ngClass]="{'activeSpan': currentPage === '/settings'} ">
+              <img src="../../../assets/images/settings.svg">
+              Settings</a>
+          </div>
+        </div>
+</div>

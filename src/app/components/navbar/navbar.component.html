@@ -1,0 +1,40 @@
+<div class="navbar" *ngIf ="getUserType=='Admin'">
+    <input class="search" type="text" placeholder="  Search">
+    <button type="submit" class="adminSearch" ><img [attr.src]="searchIcon" alt=""></button>
+    <a class="adminInbox" routerLink="/inbox" [ngClass]="{'activeSpan': currentPage === '/'}"><img [attr.src]="adminInbox" alt=""></a>
+    <a class="notification" routerLink="/notifications" [ngClass]="{'activeSpan': currentPage === '/notifications'}"><img [attr.src]="notificationIcon" alt=""></a>
+    <img class="profile" [attr.src]="image" alt="Profile">
+    <a class="name" routerLink="/profile_settings" [ngClass]="{'activeSpan': currentPage === '/settings'}">{{name}}</a>
+    <span class="userType">{{getUserType}}</span>
+</div>
+<div class="navbar" *ngIf ="getUserType=='user'">
+    <div class="logo"> 
+        <img [src]="shoppinglogo" class="shoppinglogo" alt="">
+    </div>
+    <a class="logo" routerLink="/home" [ngClass]="{'activeSpan': currentPage === '/'}">E-commerce</a>
+    <input type="text" class="search-bar" placeholder="  Search products">
+    <button type="submit" class="useSearch">
+    <img [src]="searchIcon" alt="" class="searchicons">
+    </button>
+    <a class="profIcon" routerLink="/profile_settings" [ngClass]="{'activeSpan': currentPage === '/settings'}">
+        <img [src]="profileIcon" alt="" class="profileIcon">
+    </a>
+    <a class="heart" routerLink="/heart" [ngClass]="{'activeSpan': currentPage === '/heart'}" >
+        <img [src]="heartIcon" alt="">
+    </a>
+    <a class="cart" routerLink="/cart" [ngClass]="{'activeSpan': currentPage === '/cart'}">
+        <img [src]="shoppingBag" alt="">
+    </a>
+    <img [src]="fourCatdots" class="fourCatdots" alt="">
+    <div class="categories">
+        <img [src]="fourCatdots" alt="">
+    <select class="categoryselect">
+        
+        <option value="" >Browse by categories</option>
+        <option *ngFor="let category of Categories" >{{category}}</option>
+     </select>
+    </div>
+    <a class="homeLink" routerLink="/home" [ngClass]="{'activeSpan': currentPage === '/'}">Home</a>
+    <a class="shoplink" routerLink="/products" [ngClass]="{'activeSpan': currentPage === '/products'}">Shop</a>
+    <a class="contactlink" routerLink="/contact" [ngClass]="{'activeSpan': currentPage === '/contact'}">Contact</a>
+</div>

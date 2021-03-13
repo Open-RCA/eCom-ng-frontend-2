@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import "./../../../variables.scss";
+/*Style for admin navbar */
+div.navbar[text]{
+    font-family: 'DM Sans', sans-serif !important;
+}
+div.navbar{
+    width: absolute;
+    top: 0;
+    background: $white;
+    box-sizing: border-box;
+    height: 60px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+input.search{
+    padding: 4px;
+    position: absolute;
+    left: 250px;
+    top: 2.27%;
+    height: 20px;
+    width: 250px;
+    background: $form-fields;
+    border-radius: 27px;
+    border: none;
+}
+button.adminSearch {
+    border: none;
+    position: absolute;
+    left: 390px;
+    top: 3.17%;   
+}
+button.adminSearch img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 90px;
+}
+a.notification{
+    position: absolute;
+    left: 79%;
+    top: 3.17%;
+    background-color: $white;
+    color: $black-text;
+    text-decoration: none;
+}
+a.adminInbox{
+    position: absolute;
+    left: 75%;
+    top: 3.17%;
+    background-color: $white;
+    text-decoration: none;
+}
+a.adminInbox img{
+    position: absolute;
+    left: 75%;
+    top: 3.17%;
+    width: 20px;
+    height: 20px;
+}
+a.notification img{
+    position: absolute;
+    left: 85%;
+    top: 3.17%;
+    width: 20px;
+    height: 20px;
+}
+img.profile{
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    border-radius: 30px;
+    left: 83%;
+    top: 2.5%;
+}
+a.name{
+    position: absolute;
+    left: 85.8%;
+    top: 2.4%;
+    text-decoration: none;
+    color: $black-text;
+    
+}
+span.userType{
+    font-size: 10px;
+    position: absolute;
+    left: 85.8%;
+    top: 5%;
+    color: $text-grey;
+}
+/* Style for user navbar*/
+div.logo{
+    background-color: $base-color;
+    position: absolute;
+    width: 52px;
+    height: 51px;
+    left: 80px;
+    top: 16px;
+    border-radius: 4px;
+}
+img.shoppinglogo{
+    padding: 7px;
+    width: 30px;
+    color: $white;
+    background-color: $base-color;
+}
+a.logo{
+    color: $base-color;
+    text-decoration: none;
+    position: absolute;
+    width: 115px;
+    height: 23px;
+    left: 140px;
+    top: 30px;
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+input.search-bar{
+    position: absolute;
+    left: 500px;
+    top: 33px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: $text-grey;
+    width: 299px;
+}
+button.useSearch{
+    border: none;
+    position: absolute;
+    left: 770px;
+    width: 1px;
+    height: 1px;
+    top: 34px;
+    background-color: $white;
+}
+img.searchicons{
+    left: 780px;
+    top: 34px;
+    width: 20px;
+    height: 15px;
+}
+a.profIcon{
+    position: absolute;
+    left: 1100px;
+    top: 28px;
+}
+a.heart{
+    position: absolute;
+    left: 1160px;
+    top: 28px; 
+}
+a.cart{
+    position: absolute;
+    left: 1215px;
+    top: 28px; 
+}
+img.fourCatdots{
+    position: absolute;
+width: 20px;
+height: 20px;
+left: 82px;
+top: 116px;
+}
+ul.categories{
+    background-color: $base-color;
+    position: absolute;
+    width: 190px;
+    height: 40px;
+    left: 82px;
+    top: 70px;
+}
+ul.categories li{
+    list-style-type: none;
+    color: $white;
+    padding-top: 7px;
+}
+a.homeLink{
+    position: absolute;
+width: 45px;
+height: 21px;
+left: 530px;
+top: 100px;
+text-decoration: none;
+color: $black-text;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+}
+a.shoplink{
+    position: absolute;
+width: 39px;
+height: 21px;
+left: 620px;
+top: 100px;
+text-decoration: none;
+color: $black-text;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+}
+a.contactlink{
+    position: absolute;
+width: 62px;
+height: 21px;
+left: 700px;
+top: 100px;
+text-decoration: none;
+color: $black-text;
+font-family: DM Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+}
+div.categories{
+    position: absolute;
+    width: 215px;
+    height: 40px;
+    background-color: $base-color;
+    left: 80px;
+    top: 84px;
+}
+div.categories img{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 9px;
+    left: 8px;
+}
+select.categoryselect{
+    position: absolute;
+    color: $white;
+    background-color: $base-color;
+    height: 40px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-size: 16px;
+    left: 35px;
+    border: none;
+}
