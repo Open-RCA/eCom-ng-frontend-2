@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {QuicklinkModule, QuicklinkStrategy} from 'ngx-quicklink';
 import { TestModule } from './views/test/test.module';
+import { DashboardModule } from './views/dashboard/dashboard.module';
 
 const routes: Routes = [
   {
@@ -22,7 +23,12 @@ const routes: Routes = [
   loadChildren: () => import('./views/customers/customers-routing.module').then((m) => CustomersModule),data: {
     shouldPreload: true
   }
-
+},
+{
+  path: 'dashboard',
+  loadChildren: () => import('./views/dashboard/dashboard-routing.module').then((m) => DashboardModule),data: {
+    shouldPreload: true
+  }
 }
 
 ];

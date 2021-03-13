@@ -14,7 +14,10 @@ div.navbar{
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
+    margin-left: 14.6em;
+    
+    
 }
 
 input.search{
@@ -250,4 +253,8 @@ select.categoryselect{
     font-size: 16px;
     left: 35px;
     border: none;
+}
+// for Mugisha Isaac
+.navbar{
+    box-shadow: 1px 1px 1px 1px #ccc;
 }
