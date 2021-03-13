@@ -5,11 +5,22 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { AdminBodyComponent } from './admin-body/admin-body.component';
+import { ShopSidebarComponent } from './shop-sidebar/shop-sidebar.component';
+import { ShopNavbarComponent } from './shop-navbar/shop-navbar.component';
 
 
 
 @NgModule({
-  declarations: [DummyComponent, SidebarComponent, NavbarComponent, AdminSidebarComponent, AdminBodyComponent,AdminBodyComponent],
+  declarations: [
+    DummyComponent,
+    SidebarComponent, 
+    NavbarComponent, 
+    AdminSidebarComponent, 
+    AdminBodyComponent,
+    AdminBodyComponent, 
+    ShopSidebarComponent, 
+    ShopNavbarComponent,
+  ],
   imports: [
     CommonModule
   ],
@@ -18,7 +29,9 @@ import { AdminBodyComponent } from './admin-body/admin-body.component';
     SidebarComponent,
     NavbarComponent,
     AdminSidebarComponent,
-    AdminBodyComponent
+    AdminBodyComponent,
+    ShopNavbarComponent,
+    ShopSidebarComponent
   ]
 })
 export class ComponentsModule { }
