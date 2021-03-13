@@ -131,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "eCom-ng-frontend"
+  "defaultProject": "eCom-ng-frontend",
+  "cli": {
+    "analytics": "a3e5ad6f-ee03-4584-b996-c068c0830c8e"
+  }
 }
