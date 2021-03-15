@@ -6,10 +6,11 @@ import { ShopComponent } from './shop/shop.component';
 import { ShopNavbarComponent } from 'src/app/components/shop-navbar/shop-navbar.component';
 import { ShopSidebarComponent } from 'src/app/components/shop-sidebar/shop-sidebar.component';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { ProductsComponent } from './products/products.component';
 
 
 @NgModule({
-  declarations: [ShopComponent],
+  declarations: [ShopComponent, ProductsComponent],
   imports: [
     ComponentsModule,
     CommonModule,
