@@ -26,7 +26,8 @@
           <h5>Apple watch <small>$500</small></h5>
         </div>
         <div class="cart-wrapper">
-          <img src="../../../../assets/icons/active-cart-icon.svg" alt="cart image">
+          <img id="product-1" (mouseenter) = "onCartMouseEnter(true,'product-1')" 
+          (mouseleave) = "onCartMouseEnter(false,'product-1')" src={{cartIconURL}} alt="cart image">
         </div>
       </div>
     </div>
@@ -43,7 +44,8 @@
           <h5>4k Hisense TV <small>$200</small></h5>
         </div>
         <div class="cart-wrapper">
-          <img src="../../../../assets/icons/add-to-cart.svg" alt="cart image">
+          <img id="product-2" (mouseenter) = "onCartMouseEnter(true,'product-2')" 
+          (mouseleave) = "onCartMouseEnter(false,'product-2')" src={{cartIconURL}} alt="cart image">
         </div>
       </div>
     </div>
@@ -60,7 +62,8 @@
           <h5>Flat bed <small>$800</small></h5>
         </div>
         <div class="cart-wrapper">
-          <img src="../../../../assets/icons/add-to-cart.svg" alt="cart image">
+          <img id="product-3" (mouseenter) = "onCartMouseEnter(true,'product-3')" 
+          (mouseleave) = "onCartMouseEnter(false,'product-3')" src={{cartIconURL}} alt="cart image">
         </div>
       </div>
     </div>
