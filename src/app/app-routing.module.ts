@@ -4,12 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import {QuicklinkModule, QuicklinkStrategy} from 'ngx-quicklink';
 import { TestModule } from './views/test/test.module';
 import { DashboardModule } from './views/dashboard/dashboard.module';
+import { ShopModule } from './views/shop/shop.module';
 
 const routes: Routes = [
   {
   path: '',
   pathMatch: 'full',
-  redirectTo: 'customers'
+  redirectTo: 'shop'
 },
 {
   path: 'test',
@@ -27,6 +28,12 @@ const routes: Routes = [
 {
   path: 'dashboard',
   loadChildren: () => import('./views/dashboard/dashboard-routing.module').then((m) => DashboardModule),data: {
+    shouldPreload: true
+  }
+},
+{
+  path: 'shop',
+  loadChildren: () => import('./views/shop/shop-routing.module').then((m) => ShopModule),data: {
     shouldPreload: true
   }
 }

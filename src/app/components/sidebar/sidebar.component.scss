@@ -1,83 +1,94 @@
 @import "src/variables.scss";
-
-.container-fluid{
-  font-family: DM Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-     .top-desc {
-      margin-top:4em;
-      text-align:center;
-      }
-      .top-desc a{
-       text-decoration:none;
-       text-align:center;
-       color:$base-color;
-       }
-     .sidebar {
-      margin: 0;
-      padding: 0;
-      width: 230px;
-      background-color: #ffffff;
-      position: fixed;
-      height: 100%;
-      overflow: auto;
-      left: 0;
-      top: 0;
-      box-shadow: 0.5px 0px 0px 0px $table-border;
-
-    }
-    .nav-links{
-      margin-top: 6em;
-      font-weight: 200;
-    }
-    .nav-links img{
+.container{
+  box-sizing: content-box;
+}
+.top-desc {
+  margin-top:4em;
+  text-align:center;
+  }
+  .top-desc a{
+   text-decoration:none;
+   text-align:center;
+   color:$base-color;
+   }
+.activeSpan{
+  background-size: cover;
+  color: $base-color !important;
+  border-left: 2px solid $base-color;
+  // background-color: $side-border;
+ }
+ .activeSpan svg{
+   fill: $base-color;
+ }
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 125%;
+  height: 100vh;
+  overflow: auto;
+  margin-left: -1em;
+  box-shadow: 0px 0px 2px 1px rgba(100, 100, 100, 0.2);
+}
+.sidebar svg{
+  width: 20px;
+  margin-right: 0.6em;
+}
+.nav-linnks{
+    margin-top: 8em;
+    // font-weight: 200;
+}
+.nav-linnks a {
+  margin-top:0.5em;
+  display: block;
+  color: black;
+  padding: 12px;
+  font-size: 15px;
+  text-decoration: none;
+  // font-weight: lighterS;
+}
+  .nav-links img{
      width:20px;
      margin-right:10px;
-     margin-top:0.5em;
+    //  margin-top:0.5em;
     }
-    .active svg{
-    fill:#1976D2;
-    }
-    .nav-links a {
-      display: block;
-      color: black;
-      padding: 16px;
-      text-decoration: none;
-      font-weight:400;
-      font-size: 16px;
-      line-height: 21px;
-      color: #9A9A9A;
-    }
-     .activeSpan{
-      border-left: 5px solid  $base-color;
-      background-color: #F3F6FF;
-      background-size: cover;
-      color: $base-color !important;
-   }
-   .activeSpan svg{
-     fill: #3F75F4;
-   }
-
-
-    @media screen and (max-width: 700px) {
-      .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-      .sidebar a {float: left;}
-      div.content {margin-left: 0;}
-    }
-
-    @media screen and (max-width: 400px) {
-      .sidebar a {
-        text-align: center;
-        float: none;
-      }
-    }
-// }
-
+.fa{
+    font-size: 20px;
 }
 
+.sub-nav-link{
+ cursor: pointer;
+}
+.hvr{
+  margin-right: 5%;
+  color:black !important
+}
+.footer{
+  margin-top: 5em;
+  padding: 10px;
+  text-align: center;
+}
+.qn i{
+  border-radius: 50%;
+  width: 30px;
+  height: 28px;
+  border: 1px solid black;
+  margin-top: 3em;
+  margin-left: -5em;
+}
+
+.hlp{
+  margin-left: -5.5em;
+  margin-top: 5px;
+}
+@media only screen and (max-width:600px){
+.sidebar{
+  display: none;
+}
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px){
+.sidebar svg{
+  font-size: 10px;
+  padding: 0;
+}
+}
