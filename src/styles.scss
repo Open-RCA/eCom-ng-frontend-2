@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://rsms.me/inter/inter.css');
-html { 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+html {
     font-family: 'Inter', sans-serif;
     padding: 0px;
     margin: 0px;
