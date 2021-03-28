@@ -5,6 +5,7 @@ import {QuicklinkModule, QuicklinkStrategy} from 'ngx-quicklink';
 import { TestModule } from './views/test/test.module';
 import { DashboardModule } from './views/dashboard/dashboard.module';
 import { ShopModule } from './views/shop/shop.module';
+import { ProductsModule } from './views/products/products.module';
 
 const routes: Routes = [
   {
@@ -34,6 +35,12 @@ const routes: Routes = [
 {
   path: 'shop',
   loadChildren: () => import('./views/shop/shop-routing.module').then((m) => ShopModule),data: {
+    shouldPreload: true
+  }
+},
+{
+  path: 'products',
+  loadChildren: () => import('./views/products/products-routing.module').then((m) => ProductsModule),data: {
     shouldPreload: true
   }
 }
