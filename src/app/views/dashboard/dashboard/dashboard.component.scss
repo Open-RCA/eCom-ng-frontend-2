@@ -1,0 +1,23 @@
+@import "../../../../variables.scss";
+
+
+.main-dash {
+  height: 100vh;
+  overflow: auto;
+}
+
+
+.col-md-10 {
+  background-color: #E5E5E5;
+}
+
+.top {
+  width: 100%;
+  margin-left: -2.1em;
+}
+
+.content {
+  margin-top: 4em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
