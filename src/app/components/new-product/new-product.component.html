@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+                <span class="close" (click)="addModal.hide()" aria-hidden="true">&times;</span>
+              <div class="materialsArea"></div>
+            <h5>New product</h5>
+            <form   [formGroup]="form" (ngSubmit)="onSubmit(form)">
+            <label for="productName"> Product name  </label>
+                <input type="text" formControlName = "productName">
+                <div *ngIf="productName && productName?.touched && productName?.invalid" class="error">
+                    <div *ngIf="productName && productName?.errors?.required">Product name is required</div>
+                </div>
+            <label for="productCategory">Select product category</label>
+            
+            <select formControlName="categoryControl" required>
+                <option >Select product category</option>
+                <option *ngFor="let category of categories" >{{category.name}}</option>
+              </select>
+              <!-- <div *ngIf="categoryControl && categoryControl?.touched && categoryControl?.invalid" class="error">
+                <div *ngIf="categoryControl && categoryControl?.errors?.required">Product category is required</div>
+            </div> -->
+            <label for="">Set product price</label>
+                <input type="number" step="0.01" name="" id="" formControlName = "product_price" >
+                <div *ngIf=" product_price&& product_price?.touched && product_price?.invalid" class="error">
+                    <div *ngIf="product_price && product_price?.errors?.required">Product price is required</div>
+                 </div>
+            <label for="">Upload product image</label>
+            <input #file type="file" accept='image/*' (change)="preview(file.files)"/>
+            <img [src]="imgURL" *ngIf="imgURL" class="prodImg">
+            <button type="submit" [disabled]="!form.valid" >Add product</button>
+        </form>
+        </div>
+    </div>
+  </div>
+  
