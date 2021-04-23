@@ -16,8 +16,6 @@ export class NewProductComponent implements OnInit {
       productName: new FormControl('',[Validators.required,Validators.minLength(3)]),
       product_price: new FormControl('',[Validators.required]),
       categoryControl: new FormControl('',Validators.required)
-      // ,
-      // product_image: new FormControl(Validators.required)
     });
   }
   categories = [
@@ -47,9 +45,6 @@ export class NewProductComponent implements OnInit {
   get categoryControl(){
     return this.form.get('categoryControl');
   }
-  // get product_image(){
-  //   return this.form.get('product_image')
-  // }
   // Image preview 
   public imagePath: any;
   imgURL: any;
