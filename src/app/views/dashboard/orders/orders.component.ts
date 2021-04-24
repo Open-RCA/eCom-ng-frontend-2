@@ -12,4 +12,14 @@ export class OrdersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  customers=[
+    {"customerId":"#7826798" , "customerName":"John Doe" , "InStock":"34", "category":"Home appliences", "price":"784952"},
+    {"customerId":"#7826798" , "customerName":"John Doe" , "InStock":"34", "category":"Home appliences", "price":"784952"},
+    {"customerId":"#7826798" , "customerName":"John Doe" , "InStock":"34", "category":"Home appliences", "price":"784952"},
+    {"customerId":"#7826798" , "customerName":"John Doe" , "InStock":"34", "category":"Home appliences", "price":"784952"},
+    {"customerId":"#7826798" , "customerName":"John Doe" , "InStock":"34", "category":"Home appliences", "price":"784952"},
+    {"customerId":"#7826798" , "customerName":"John Doe" , "InStock":"34", "category":"Home appliences", "price":"784952"},
+    {"customerId":"#7826798" , "customerName":"John Doe" , "InStock":"34", "category":"Home appliences", "price":"784952"},
+
+  ]
 }

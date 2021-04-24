@@ -1,1 +1,69 @@
-<p>orders works!</p>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="sidebar">
+          <app-sidebar></app-sidebar>
+        </div>
+      </div>
+      <div class="col-md-10 main-dash">
+        <div class="row overview">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-12 top">
+                <!-- <app-navbar></app-navbar> -->
+              </div>
+            </div>
+            <div class="content">
+              <div class="row">
+                <div class="col-md-9">
+                  <h3>Customers</h3>
+                </div>
+                <div class="col-md-3 addP">
+                  <a class="btn">+ Add Customer</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card p-3">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Customer Name</th>
+                                <th scope="col">Customer Email</th>
+                                <th scope="col">Instock</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let customer of customers">
+                                <td>{{customer.customerId}}</td>
+                                <td>{{customer.customerName}}</td>
+                                <td>{{customer.customerId}}</td>
+                                <td>{{customer.InStock}}</td>
+                                <td>{{customer.category}}</td>
+                                <td>{{customer.price}}</td>
+                                <td>
+                                  <img src="../.././../assets/images/more-alt-2.svg" alt="">
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

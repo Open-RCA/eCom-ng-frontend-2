@@ -1,0 +1,191 @@
+@import "../../../variables.scss";
+
+
+.main-dash {
+  height: 100vh;
+  overflow: auto;
+}
+
+
+.col-md-10 {
+  background-color: #E5E5E5;
+}
+
+.top {
+  width: 100%;
+  margin-left: -2.1em;
+}
+
+.content {
+  margin-top: 4em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+table {
+  width: 100%;
+  padding: 10px;
+}
+
+.card {
+  margin-top: 5em;
+  overflow-x: auto;
+  margin-bottom: 3em;
+  border-color: white;
+}
+
+td a {
+  padding: 0.8em;
+  font-family: "poppins" !important;
+  color: black;
+}
+
+td .fa-edit {
+  color: green;
+  font-size: 20px;
+}
+
+td .fa-eye {
+  color: #79D2DE;
+  font-size: 20px;
+
+}
+
+td {
+  border: none;
+}
+
+.addP .btn {
+  margin-left: 5em;
+  box-shadow: 2px 0px 2px #c2c2c2;
+  padding: 10px;
+  color: white;
+  background-color: $base-color;
+
+}
+
+.controls {
+  margin-left: 45em;
+}
+
+
+.filterForm {
+  width: 20%;
+  display: none;
+}
+
+
+.navbar input {
+  margin-top: -0.5em;
+  width: 70%;
+  background-position: 650px 2px;
+  background-size: 30px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIP-zagesI6oIDc6Z_EtyZSeHi4C949tp1VA&usqp=CAU);
+  background-repeat: no-repeat;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  margin-left: 25em;
+
+}
+
+textarea:focus,
+select:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+  box-shadow: none;
+  border-radius: 0;
+
+}
+
+nav{
+  width: 30%;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  height: 70%;
+  margin-left: 30em;
+}
+
+
+.dropdown .dropdown-menu{
+  margin-left: -0.8em;
+  width: 160px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 2px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+.dropdown-submenu label, .dropdown-submenu input{
+  margin-left: -2em;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+
+  .addP .btn {
+    margin-left: 13em;
+    margin-top: -4.5em;
+  }
+
+  .content {
+    margin-top: 6em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .card{
+    width: 100%;
+  }
+
+  .table .navbar {
+    width: 100%;
+  }
+  .dropDiv{
+    margin-left: 5em;
+    width: 100px;
+  }
+  .navbar input{
+    width: 100%;
+    background-position: 200px 2px;
+    background-size: 30px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIP-zagesI6oIDc6Z_EtyZSeHi4C949tp1VA&usqp=CAU);
+    background-repeat: no-repeat;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+  .controls{
+    margin-left: 0em;
+    display: flex;
+  }
+  nav{
+    display: none;
+  }
+}
