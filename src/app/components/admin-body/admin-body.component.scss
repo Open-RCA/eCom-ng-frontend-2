@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import "./../../../variables.scss";
-
-body{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 .statistics{
   margin-top: 2em;
 }
@@ -16,4 +10,29 @@ body{
 .dataCard{
   padding-right:10px;
   width: 250px !important;
+}
+.card-text span{
+  display:block;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #9A9A9A;  
+}
+.selectDays{
+background: #C4C4C4;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 23.5px;
+float: right;
+margin-top:-2em;
+}
+.statistics{
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 23px;
+color: #000000;
 }
