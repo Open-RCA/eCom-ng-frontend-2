@@ -7,6 +7,7 @@ import { AdminSidebarComponent } from './admin-sidebar/admin-sidebar.component';
 import { AdminBodyComponent } from './admin-body/admin-body.component';
 import { ShopSidebarComponent } from './shop-sidebar/shop-sidebar.component';
 import { ShopNavbarComponent } from './shop-navbar/shop-navbar.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 
 
@@ -19,7 +20,7 @@ import { ShopNavbarComponent } from './shop-navbar/shop-navbar.component';
     AdminBodyComponent,
     AdminBodyComponent, 
     ShopSidebarComponent, 
-    ShopNavbarComponent,
+    ShopNavbarComponent, AddProductComponent,
   ],
   imports: [
     CommonModule

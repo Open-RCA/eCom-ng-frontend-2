@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: BsModalService) { }
 
   products=[
     {"productId":"#1220000" , "productName":"washing machine" , "InStock":"10", "category":"Home appliences", "price":"20000"},
@@ -20,6 +20,10 @@ export class ProductsComponent implements OnInit {
 
   ]
   ngOnInit(): void {
+  }
+  openAddMaterial(): void {
+    this.addModal = this.modalService.show(CreateMaterialComponent
+    );
   }
 
 }
