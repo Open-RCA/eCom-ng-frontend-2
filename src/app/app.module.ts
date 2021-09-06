@@ -6,19 +6,24 @@ import { TestDirective } from './directives/test.directive';
 import { TestPipe } from './pipes/test.pipe';
 import {ComponentsModule} from './components/components.module';
 import {ViewsModule} from './views/views.module';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { ReactiveFormsModule } from '@angular/forms';
+
 // import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestDirective,
-    TestPipe,
+    TestPipe
       ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     ComponentsModule,
-    ViewsModule
+    ViewsModule,
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

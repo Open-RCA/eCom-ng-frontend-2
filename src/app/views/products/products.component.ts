@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { BsModalService } from 'ngx-bootstrap/modal';
+import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
+import { AddProductComponent } from 'src/app/components/add-product/add-product.component';
 
 @Component({
   selector: 'app-products',
@@ -7,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
+  addModal!: BsModalRef;
   constructor(private modalService: BsModalService) { }
 
   products=[
@@ -22,7 +26,7 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
   }
   openAddMaterial(): void {
-    this.addModal = this.modalService.show(CreateMaterialComponent
+    this.addModal = this.modalService.show(AddProductComponent
     );
   }
 

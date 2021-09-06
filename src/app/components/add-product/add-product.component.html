@@ -1,1 +1,39 @@
-<p>add-product works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 formCont">
+          <!-- <span (click)="addModal.hide()" class="close-btn pull-right">
+            ×        
+          </span> -->
+          <h5>New product</h5>
+    <form  [formGroup]="addProductForm" novalidate (ngSubmit)="onSubmit(addProductForm.value)">
+    <label for="productName"> Product name  </label>
+        <input type="text" formControlName = "productName">
+        <div  *ngIf="f.productName?.touched && f.productName?.invalid" class="alert alert-danger w-50 mh-25" >
+          <div *ngIf="f.productName?.errors?.required">Name is required.</div>
+          <div *ngIf="f.productName?.errors?.minlength">Name should be 3 character.</div>
+      </div>
+    <label for="productCategory">Select product category</label>
+    <select formControlName="categoryControl" required>
+        <option >Select product category</option>
+        <option *ngFor="let category of categories" >{{category.name}}</option>
+      </select>
+      <div *ngIf="f.categoryControl?.touched && f.productName?.invalid" class="alert alert-danger w-50">
+        <div *ngIf="f.categoryControl?.errors?.required">Category name is required.</div>
+    </div>
+    <label for="">Set product price</label>
+        <input type="number" step="0.01" name="" id="" formControlName = "product_price" >
+        <div *ngIf="f.product_price?.touched && f.product_price?.invalid" class="alert alert-danger w-50">
+          <div *ngIf="f.product_price?.errors?.required">Product price is required.</div>
+      </div>  
+    <label for="">Upload product image</label>
+    <input formControlName="file" #file type="file" accept='image/*' (change)="preview(file.files)" />
+    <div *ngIf="f.file?.touched && f.file?.invalid" class="alert alert-danger w-50">
+      <div *ngIf="f.file?.errors?.required">File is required.</div>
+  </div>
+    <img [src]="imgURL" *ngIf="imgURL" class="prodImg">
+    <button type="submit" [disabled]="this.addProductForm.invalid">Add product</button>
+</form>
+        </div>
+    </div>
+  </div>
+  
