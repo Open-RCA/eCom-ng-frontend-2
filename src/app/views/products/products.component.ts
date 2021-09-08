@@ -23,6 +23,9 @@ export class ProductsComponent implements OnInit {
     {"productId":"#1220000" , "productName":"washing machine" , "InStock":"10", "category":"Home appliences", "price":"20000"},
 
   ]
+  // openAddMaterial(): void {
+  //   this.addModal = this.modalService.show(NewProductComponent);
+  // }
   ngOnInit(): void {
   }
   openAddMaterial(): void {

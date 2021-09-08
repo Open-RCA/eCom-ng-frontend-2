@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule}  from '@angular/forms';
 import { DummyComponent } from './dummy/dummy.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -8,7 +9,8 @@ import { AdminBodyComponent } from './admin-body/admin-body.component';
 import { ShopSidebarComponent } from './shop-sidebar/shop-sidebar.component';
 import { ShopNavbarComponent } from './shop-navbar/shop-navbar.component';
 import { AddProductComponent } from './add-product/add-product.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { from } from 'rxjs';
+//import { BsModalRef } from 'ngx-bootstrap/modal';
 
 
 
